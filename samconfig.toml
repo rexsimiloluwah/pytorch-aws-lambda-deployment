@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "pytorch-sam-demo"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1nklbio5tebdx"
+s3_prefix = "pytorch-sam-demo"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["QAModelPytorchFunction=038377321322.dkr.ecr.us-west-2.amazonaws.com/pytorchsamdemodd85a119/qamodelpytorchfunctionbfc9c974repo"]
